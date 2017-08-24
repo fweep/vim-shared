@@ -14,7 +14,11 @@ set hidden
 set history=10000
 
 " Yank to system clipboard.
-set clipboard=unnamed
+if has("unix") && !has("osx")
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+end
 
 " Replace tabs with the appropriate number of spaces in insert mode.
 set expandtab
