@@ -55,7 +55,7 @@ set nowritebackup
 set undofile
 
 " Prepend .git/tags to tag file search path.
-set tags^=.git/tags
+set tags^=.git/tags,../tags
 
 " Set window title.
 set title
