@@ -37,8 +37,10 @@ Plug 'sjl/gundo.vim'
 " Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
 let g:ale_linters = {
-      \ 'python': ['pylint', 'pep8'],
+      \ 'python': ['pylint', 'flake8'],
       \ }
+let g:ale_python_flake8_executable = 'pep8'
+let g:ale_python_flake8_options = '--ignore=E501,E123'
 
 " Format regions as tables.
 Plug 'godlygeek/tabular'
