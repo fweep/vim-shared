@@ -34,7 +34,11 @@ Plug 'kien/ctrlp.vim'
 Plug 'sjl/gundo.vim'
 
 " Mark syntax/linter errors and populate location list.
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
+let g:ale_linters = {
+      \ 'python': ['pylint', 'pep8'],
+      \ }
 
 " Format regions as tables.
 Plug 'godlygeek/tabular'
@@ -66,11 +70,15 @@ let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
 
-" Autocompletion.
 if has('nvim')
+  " Asynchronous autocompletion.
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   let g:deoplete#enable_at_startup = 1
+
+  " Context-sensitive Python completion.
+  Plug 'zchee/deoplete-jedi'
 else
+  " Semi-asynchronous autocompletion (launches a server and communicates synchronously).
   Plug 'Valloric/YouCompleteMe'
 end
 
