@@ -1,0 +1,106 @@
+" Configure plugins using junegunn/vim-plug.
+let plugged_directory = fnamemodify(expand('$MYVIMRC'), ':p:h') . '/plugged'
+call plug#begin(plugged_directory)
+
+" General-purpose plugins.
+
+" Colorscheme.
+Plug 'altercation/vim-colors-solarized'
+
+" See GitHub for details of tpope plugins.
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-vinegar'
+
+" See GitHub for details of AndrewRadev plugins.
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'AndrewRadev/switch.vim'
+
+" Ack search results in quickfix window.
+Plug 'mileszs/ack.vim'
+
+" Fuzzy file finder.
+Plug 'kien/ctrlp.vim'
+
+" Undo tree manipulator.
+Plug 'sjl/gundo.vim'
+
+" Mark syntax/linter errors and populate location list.
+Plug 'scrooloose/syntastic'
+
+" Format regions as tables.
+Plug 'godlygeek/tabular'
+
+" bufkill doesn't get along with netrw; disabling pending bugfix https://github.com/qpkorr/vim-bufkill/issues/11
+" Plug 'qpkorr/vim-bufkill'
+
+" FIXME: test
+" Plug 'majutsushi/tagbar'
+
+" My plugins (if you're not me, get rid of these g:plug_url_format lines to use https GitHub URLs).
+let g:plug_url_format = 'git@github.com:%s.git'
+
+" Powerline-style tabs and other tab labeling functionality.
+Plug 'fweep/vim-tabber'
+
+" Bind cscope search commands and list results in quickfix window.
+Plug 'fweep/vim-cscope'
+unlet g:plug_url_format
+
+" Buffer list in a tray-style window.
+Plug 'jeetsukumaran/vim-buffergator'
+let g:buffergator_suppress_keymaps = 1
+
+" Lighter-weight Powerline-style statusline.
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme = 'solarized'
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+
+" Autocompletion.
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  let g:deoplete#enable_at_startup = 1
+else
+  Plug 'Valloric/YouCompleteMe'
+end
+
+" Ruby/Rails plugins
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'thoughtbot/vim-rspec'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+
+" Python plugins
+Plug 'python-mode/python-mode'
+let g:pymode_python = 'python3'
+let g:pymode_options_colorcolumn = 0
+" Prefer Syntastic for linting.
+let g:pymode_lint = 0
+" Disable Rope for now.
+let g:pymode_rope = 0
+
+" HTML/Javascript plugins
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
+" Plug 'kchmck/vim-coffee-script'
+
+" Elixir plugins
+" Plug 'elixir-lang/vim-elixir'
+
+if !has('nvim')
+  " Neovim supports bracketed paste out of the box.
+  Plug 'ConradIrwin/vim-bracketed-paste'
+end
+
+call plug#end()
