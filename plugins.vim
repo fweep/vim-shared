@@ -81,7 +81,8 @@ if has('nvim')
   Plug 'zchee/deoplete-jedi'
 else
   " Semi-asynchronous autocompletion (launches a server and communicates synchronously).
-  Plug 'Valloric/YouCompleteMe'
+  " Plug 'Valloric/YouCompleteMe'
+  Plug 'Shougo/neocomplete.vim'
 end
 
 " Ruby/Rails plugins
