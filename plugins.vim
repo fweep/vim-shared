@@ -36,11 +36,7 @@ Plug 'sjl/gundo.vim'
 " Mark syntax/linter errors and populate location list.
 " Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
-let g:ale_linters = {
-      \ 'python': ['pylint', 'flake8'],
-      \ }
-let g:ale_python_flake8_executable = 'pep8'
-let g:ale_python_flake8_options = '--ignore=E501,E123'
+
 
 " Format regions as tables.
 Plug 'godlygeek/tabular'
