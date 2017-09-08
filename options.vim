@@ -166,3 +166,20 @@ set previewheight=20
 
 " Make ~ for case-swapping require a motion by default.
 set tildeop
+
+" Save more history for marks, commands, searches, etc. between invocations.
+if has("nvim")
+  set shada='100,/1000,:1000,<50,s100,h,c
+else
+  set viminfo='100,/1000,:1000,<50,s100,h,c
+endif
+
+" Support SGR mouse if available, fall back to xterm2 mouse.
+if !has("nvim")
+  if has("mouse_sgr")
+    " Allows mouse clicking beyond terminal column 222.
+    set ttymouse=sgr
+  else
+    set ttymouse=xterm2
+  endif
+endif

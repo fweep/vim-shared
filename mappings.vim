@@ -121,3 +121,31 @@ autocmd BufRead,BufNewFile README.md setlocal wrap textwidth=72 formatoptions-=l
 
 " Populate quickfix window with FIXME/TODO.
 command! Fixme Ack 'fixme|todo'
+
+" Tabber autolabel {{{1
+
+" FIXME: this should be part of vim-tabber; in an after file; or its own plugin.
+
+function! UpdateTabberLabel(label)
+  let tab_number = tabpagenr()
+  let tabber_properties = gettabvar(tab_number, 'tabber_properties')
+  let tabber_properties.label = a:label
+  call settabvar(tab_number, 'tabber_properties', tabber_properties)
+  redraw!
+endfunction
+
+function! SetTabberLabelToRubyClassName()
+  let line = getline(1)
+  let class_name_match = matchlist(line, '^\s*class\s\+\(\w\+\)')
+  if len(class_name_match) > 1
+    let class_name = class_name_match[1]
+    call UpdateTabberLabel(class_name)
+  endif
+endfunction
+
+augroup tabber_autolabel
+  autocmd!
+  autocmd BufRead,BufWrite *.rb call SetTabberLabelToRubyClassName()
+augroup END
+
+" }}}

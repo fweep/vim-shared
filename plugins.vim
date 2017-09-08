@@ -2,9 +2,6 @@
 let plugged_directory = fnamemodify(expand('$MYVIMRC'), ':p:h') . '/plugged'
 call plug#begin(plugged_directory)
 
-" My shared Vim config (which includes this file; vim-plug keeps it updated).
-Plug 'git@github.com:fweep/vim-shared.git'
-
 " General-purpose plugins.
 
 " Colorscheme.
