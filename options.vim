@@ -183,3 +183,6 @@ if !has("nvim")
     set ttymouse=xterm2
   endif
 endif
+
+" Always show the sign column (to stop text shifting around with ALE's real-time linting).
+set signcolumn=yes
