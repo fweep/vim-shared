@@ -37,7 +37,6 @@ Plug 'sjl/gundo.vim'
 " Plug 'scrooloose/syntastic'
 Plug 'w0rp/ale'
 
-
 " Format regions as tables.
 Plug 'godlygeek/tabular'
 

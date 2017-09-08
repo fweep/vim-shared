@@ -5,3 +5,6 @@ colorscheme solarized
 
 " Disable underline for folds.
 highlight Folded cterm=NONE
+
+" Use same same background for SignColumn as LineNr.
+highlight SignColumn ctermbg=0 ctermfg=10
