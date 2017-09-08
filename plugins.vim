@@ -89,12 +89,6 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 
 " Python plugins
 Plug 'python-mode/python-mode'
-let g:pymode_python = 'python3'
-let g:pymode_options_colorcolumn = 0
-" Prefer Syntastic for linting.
-let g:pymode_lint = 0
-" Disable Rope for now.
-let g:pymode_rope = 0
 
 " HTML/Javascript plugins
 " Plug 'pangloss/vim-javascript'
