@@ -80,6 +80,9 @@ else
   Plug 'Shougo/neocomplete.vim'
 end
 
+" Most Recently Used files.
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " Ruby/Rails plugins
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-bundler'
