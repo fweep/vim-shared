@@ -16,6 +16,9 @@ let g:ale_python_flake8_options = '--ignore=E501,E123'
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
+" Show the location list whenever there are errors/warnings.
+let g:ale_open_list = 1
+
 " Use highlights that go well with Solarized Dark.
 highlight ALEErrorSign ctermbg=1 ctermfg=7
 highlight ALEWarningSign ctermbg=2 ctermfg=7
