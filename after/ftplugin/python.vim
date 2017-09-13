@@ -4,8 +4,11 @@ setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=99
 " Stop inserting comment leaders with o/O.
 setlocal formatoptions-=o
 
+" Start with folds open.
+setlocal foldlevel=99
+
 " Now relying on tmhedberg/SimpylFold for smarter folding.
-" setlocal foldmethod=indent foldlevel=20
+" setlocal foldmethod=indent
 
 " Disable completion previews.
 setlocal completeopt-=preview
