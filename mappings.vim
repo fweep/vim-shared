@@ -10,6 +10,9 @@ nnoremap Y y$
 " Make X like D into a black hole.
 nnoremap X "_D
 
+" Make x use the black hole register (don't ever want the single character in the clipboard).
+nnoremap x "_x
+
 " Map jk to <Esc> in insert mode.
 inoremap jk <Esc>
 
