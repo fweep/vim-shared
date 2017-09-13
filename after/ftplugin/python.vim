@@ -1,6 +1,13 @@
-" FIXME: figure out how to move after/* stuff to vim-shared repo
-setlocal foldmethod=indent foldlevel=20 formatoptions-=o
+" Standard vim indentation.
 setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=99
+
+" Stop inserting comment leaders with o/O.
+setlocal formatoptions-=o
+
+" Now relying on tmhedberg/SimpylFold for smarter folding.
+" setlocal foldmethod=indent foldlevel=20
+
+" Disable completion previews.
 setlocal completeopt-=preview
 
 " Disable python-mode's linelength column highlight.

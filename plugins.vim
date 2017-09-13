@@ -93,6 +93,9 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 " Python plugins
 Plug 'python-mode/python-mode'
 
+" Improved Python folding.
+Plug 'tmhedberg/SimpylFold'
+
 " HTML/Javascript plugins
 " Plug 'pangloss/vim-javascript'
 " Plug 'mxw/vim-jsx'
@@ -105,5 +108,8 @@ if !has('nvim')
   " Neovim supports bracketed paste out of the box.
   Plug 'ConradIrwin/vim-bracketed-paste'
 end
+
+" Only recompute folds on save and during some folding operations (greatly speeds up insert mode).
+Plug 'Konfekt/FastFold'
 
 call plug#end()
