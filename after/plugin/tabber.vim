@@ -5,8 +5,9 @@ endif
 
 set tabline=%!tabber#TabLine()
 
-nnoremap <C-t>              :exe tabpagenr('$') . "TabberNew"<CR>
-nnoremap <leader>.          :TabberSelectLastActive<CR>
+nnoremap <C-t> :exe tabpagenr('$') . "TabberNew"<CR>
+nnoremap <C-d> :tabclose<CR>
+nnoremap <leader>. :TabberSelectLastActive<CR>
 " nnoremap <leader>tc         :tabclose<CR>
 " nnoremap <leader>tl         :TabberShiftLeft<CR>
 " nnoremap <leader>tr         :TabberShiftRight<CR>
