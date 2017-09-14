@@ -112,4 +112,7 @@ end
 " Only recompute folds on save and during some folding operations (greatly speeds up insert mode).
 Plug 'Konfekt/FastFold'
 
+" Do HTTP requests from inside Vim.
+Plug 'aquach/vim-http-client'
+
 call plug#end()
