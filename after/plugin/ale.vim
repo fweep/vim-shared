@@ -17,7 +17,9 @@ let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
 " Show the location list whenever there are errors/warnings.
-let g:ale_open_list = 1
+" let g:ale_open_list = 1
+" Temporarily disabling this because ALE keeps linting in insert mode despite my best efforts.
+let g:ale_open_list = 0
 
 " Use highlights that go well with Solarized Dark.
 highlight ALEErrorSign ctermbg=1 ctermfg=7
