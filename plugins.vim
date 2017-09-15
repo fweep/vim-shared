@@ -115,4 +115,7 @@ Plug 'Konfekt/FastFold'
 " Do HTTP requests from inside Vim.
 Plug 'aquach/vim-http-client'
 
+" nginx syntax highlighting.
+Plug 'fatih/vim-nginx'
+
 call plug#end()
