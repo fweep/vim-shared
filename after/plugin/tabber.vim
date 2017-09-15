@@ -3,8 +3,6 @@ if has("gui")
   set guioptions-=e
 endif
 
-set tabline=%!tabber#TabLine()
-
 nnoremap <C-t> :exe tabpagenr('$') . "TabberNew"<CR>
 nnoremap <C-d> :tabclose<CR>
 nnoremap <leader>. :TabberSelectLastActive<CR>
