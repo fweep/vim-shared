@@ -74,14 +74,17 @@ if has('nvim')
 
   " Context-sensitive Python completion.
   Plug 'zchee/deoplete-jedi'
+
+  " Most Recently Used files.
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 else
   " Semi-asynchronous autocompletion (launches a server and communicates synchronously).
   " Plug 'Valloric/YouCompleteMe'
   Plug 'Shougo/neocomplete.vim'
-end
 
-" Most Recently Used files.
-Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+  " Most Recently Used files.
+  Plug 'Shougo/denite.nvim'
+end
 
 " Ruby/Rails plugins
 Plug 'tpope/vim-rails'
