@@ -24,4 +24,3 @@ let g:ale_open_list = 0
 " Use highlights that go well with Solarized Dark.
 highlight ALEErrorSign ctermbg=1 ctermfg=7
 highlight ALEWarningSign ctermbg=2 ctermfg=7
-highlight SignColumn ctermbg=0 ctermfg=10

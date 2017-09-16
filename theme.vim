@@ -7,8 +7,7 @@ colorscheme solarized
 highlight Folded cterm=NONE
 
 " Use same same background for SignColumn as LineNr.
-highlight SignColumn ctermbg=0 ctermfg=10
+highlight SignColumn ctermfg=10 ctermbg=NONE
 
-" Use a pipe-like vertical divider (same as tmux) and the default background color.
-set fillchars=vert:│
-highlight VertSplit ctermfg=11 ctermbg=NONE
+" Tone-down trailing character and blank line highlights.
+highlight NonText cterm=NONE ctermbg=NONE ctermfg=11
