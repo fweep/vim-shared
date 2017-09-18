@@ -65,7 +65,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Configure airline (some of these won't work in an after file).
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 
 if has('nvim')
   " Asynchronous autocompletion.
