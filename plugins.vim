@@ -63,9 +63,9 @@ let g:buffergator_suppress_keymaps = 1
 " Lighter-weight Powerline-style statusline.
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-let g:airline_theme = 'solarized'
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 1
+
+" Configure airline (some of these won't work in an after file).
+" let g:airline_powerline_fonts = 1
 
 if has('nvim')
   " Asynchronous autocompletion.
