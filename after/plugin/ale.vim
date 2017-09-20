@@ -1,5 +1,3 @@
-" FIXME: consider installing vim-shared as a plugin with an after directory.
-
 " pylint only runs on save.  flake8/pep8 can run in realtime.
 let g:ale_linters = {
       \ 'python': ['pylint', 'flake8'],
