@@ -24,8 +24,11 @@ let g:airline_mode_map = {
 " Disable extensions by default.
 " let g:airline_extensions = []
 
+" Disable Git (fugitive) section.
+let g:airline_section_b = ''
+
 " Disable fileencoding, fileformat.
-" let g:airline_section_y = ''
+let g:airline_section_y = ''
 
 " Disable percentage/line/col numbers.
-" let g:airline_section_z = ''
+let g:airline_section_z = ''

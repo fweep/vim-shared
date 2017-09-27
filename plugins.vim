@@ -27,6 +27,9 @@ Plug 'AndrewRadev/switch.vim'
 " Ack search results in quickfix window.
 Plug 'mileszs/ack.vim'
 
+" Automatically insert closing brackets and other paired elements.
+Plug 'jiangmiao/auto-pairs'
+
 " Fuzzy file finder.
 Plug 'kien/ctrlp.vim'
 
@@ -120,5 +123,8 @@ Plug 'aquach/vim-http-client'
 
 " nginx syntax highlighting.
 Plug 'fatih/vim-nginx'
+
+" Sublime-like multiple cursors.
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
