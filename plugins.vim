@@ -130,4 +130,7 @@ Plug 'terryma/vim-multiple-cursors'
 " Syntax highlighting for tmux.conf (not updated to 2.3+).
 Plug 'tmux-plugins/vim-tmux'
 
+" TypeScript syntax highlighting.
+Plug 'leafgarland/typescript-vim'
+
 call plug#end()
