@@ -127,4 +127,7 @@ Plug 'fatih/vim-nginx'
 " Sublime-like multiple cursors.
 Plug 'terryma/vim-multiple-cursors'
 
+" Syntax highlighting for tmux.conf (not updated to 2.3+).
+Plug 'tmux-plugins/vim-tmux'
+
 call plug#end()
