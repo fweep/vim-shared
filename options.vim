@@ -75,9 +75,17 @@ set autoread
 " Allow the cursor to move beyond EOL in visual mode block selections.
 set virtualedit=block
 
-" Show line numbers, width 4 in the column by default.
+" Show current line number and relative numbers of other lines, width 4 in the column by default.
+" set number relativenumber
 set number
 set numberwidth=4
+
+" Only show relativenumber for the current window.
+" augroup numbertoggle
+"   autocmd!
+"   autocmd BufEnter,FocusGained * set relativenumber
+"   autocmd BufLeave,FocusLost * set norelativenumber
+" augroup END
 
 " Disable error bells when error messages are printed.
 set noerrorbells
@@ -186,3 +194,6 @@ endif
 
 " Always show the sign column (to stop text shifting around with ALE's real-time linting).
 set signcolumn=yes
+
+" Don't show mode in the command line window, since the statusline has it.
+set noshowmode

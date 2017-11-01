@@ -28,7 +28,8 @@ Plug 'AndrewRadev/switch.vim'
 Plug 'mileszs/ack.vim'
 
 " Automatically insert closing brackets and other paired elements.
-Plug 'jiangmiao/auto-pairs'
+" Disabled because it annoyed me when inserting next to non-whitespace characters.
+" Plug 'jiangmiao/auto-pairs'
 
 " Fuzzy file finder.
 Plug 'kien/ctrlp.vim'
@@ -102,6 +103,9 @@ Plug 'python-mode/python-mode'
 " Improved Python folding.
 Plug 'tmhedberg/SimpylFold'
 
+" Rope code refactoring for Python.
+" Plug 'python-rope/ropevim'
+
 " HTML/Javascript plugins
 " Plug 'pangloss/vim-javascript'
 " Plug 'mxw/vim-jsx'
@@ -132,5 +136,8 @@ Plug 'tmux-plugins/vim-tmux'
 
 " TypeScript syntax highlighting.
 Plug 'leafgarland/typescript-vim'
+
+" Syntax highlighting for tmux.conf.
+Plug 'tmux-plugins/vim-tmux'
 
 call plug#end()

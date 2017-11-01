@@ -1,7 +1,8 @@
 " pylint only runs on save.  flake8/pep8 can run in realtime.
-let g:ale_linters = {
-      \ 'python': ['pylint', 'flake8'],
-      \ }
+" let g:ale_linters = {
+"       \ 'python': ['pylint', 'flake8'],
+"       \ 'json': ['jsonlint'],
+"       \ }
 
 " FIXME: current client needs pep8; this should be flake8 in default config.
 let g:ale_python_flake8_executable = 'pep8'
