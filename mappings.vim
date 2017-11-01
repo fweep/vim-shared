@@ -125,6 +125,24 @@ autocmd BufRead,BufNewFile README.md setlocal wrap textwidth=72 formatoptions-=l
 " Populate quickfix window with FIXME/TODO.
 command! Fixme Ack 'fixme|todo'
 
+" Open a vertical split (instead of horizontal) when opening tag in split window.
+nnoremap <silent> <C-w><C-]> :call OpenTagInVsplit()<CR>
+
+function! OpenTagInVsplit()
+  let cword = expand("<cword>")
+  let tags = taglist(cword)
+
+  if len(tags) == 0
+    echohl ErrorMsg
+    echo 'E426: tag not found: ' cword
+    echohl None
+    return
+  endif
+
+  vsplit
+  execute "tag " cword
+endfunction
+
 " Tabber autolabel {{{1
 
 " FIXME: this should be part of vim-tabber; in an after file; or its own plugin.
