@@ -19,6 +19,7 @@ Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-projectionist'
 
 " See GitHub for details of AndrewRadev plugins.
 Plug 'AndrewRadev/splitjoin.vim'
