@@ -48,8 +48,7 @@ Plug 'godlygeek/tabular'
 " bufkill doesn't get along with netrw; disabling pending bugfix https://github.com/qpkorr/vim-bufkill/issues/11
 " Plug 'qpkorr/vim-bufkill'
 
-" FIXME: test
-" Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 
 " My plugins (if you're not me, get rid of these g:plug_url_format lines to use https GitHub URLs).
 let g:plug_url_format = 'git@github.com:%s.git'
