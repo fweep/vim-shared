@@ -51,14 +51,14 @@ Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 
 " My plugins (if you're not me, get rid of these g:plug_url_format lines to use https GitHub URLs).
-let g:plug_url_format = 'git@github.com:%s.git'
+" let g:plug_url_format = 'git@github.com:%s.git'
 
 " Powerline-style tabs and other tab labeling functionality.
 Plug 'fweep/vim-tabber'
 
 " Bind cscope search commands and list results in quickfix window.
 Plug 'fweep/vim-cscope'
-unlet g:plug_url_format
+" unlet g:plug_url_format
 
 " Buffer list in a tray-style window.
 Plug 'jeetsukumaran/vim-buffergator'
