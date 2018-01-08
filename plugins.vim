@@ -137,7 +137,7 @@ Plug 'tmux-plugins/vim-tmux'
 " TypeScript syntax highlighting.
 Plug 'leafgarland/typescript-vim'
 
-" Syntax highlighting for tmux.conf.
-Plug 'tmux-plugins/vim-tmux'
+" Sublime-style code search.
+Plug 'dyng/ctrlsf.vim'
 
 call plug#end()
