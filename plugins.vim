@@ -109,7 +109,7 @@ Plug 'tmhedberg/SimpylFold'
 " HTML/Javascript plugins
 " Plug 'pangloss/vim-javascript'
 " Plug 'mxw/vim-jsx'
-" Plug 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script'
 
 " Elixir plugins
 " Plug 'elixir-lang/vim-elixir'
@@ -139,5 +139,8 @@ Plug 'leafgarland/typescript-vim'
 
 " Sublime-style code search.
 Plug 'dyng/ctrlsf.vim'
+
+" editorconfig support.
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
