@@ -143,4 +143,7 @@ Plug 'dyng/ctrlsf.vim'
 " editorconfig support.
 Plug 'editorconfig/editorconfig-vim'
 
+" Java
+Plug 'vim-jp/vim-java'
+
 call plug#end()

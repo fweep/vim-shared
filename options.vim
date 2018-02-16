@@ -197,3 +197,6 @@ set signcolumn=yes
 
 " Don't show mode in the command line window, since the statusline has it.
 set noshowmode
+
+" Change default commentstring since I normally use hash-comment languages.
+set commentstring=#\ %s
