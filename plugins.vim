@@ -109,7 +109,7 @@ Plug 'tmhedberg/SimpylFold'
 " HTML/Javascript plugins
 " Plug 'pangloss/vim-javascript'
 " Plug 'mxw/vim-jsx'
-" Plug 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script'
 
 " Elixir plugins
 " Plug 'elixir-lang/vim-elixir'
@@ -144,5 +144,11 @@ Plug 'fatih/vim-nginx'
 Plug 'fatih/vim-go'
 
 Plug 'hashivim/vim-terraform'
+
+" editorconfig support.
+Plug 'editorconfig/editorconfig-vim'
+
+" Java
+Plug 'vim-jp/vim-java'
 
 call plug#end()
