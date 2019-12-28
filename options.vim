@@ -15,7 +15,9 @@ set history=10000
 
 " Yank to system clipboard.
 if has("unix") && !has("osx")
-  set clipboard=unnamedplus
+  " FIXME check hostname?  unnamedplus only for schonfeld somehow.  maybe look for ~/.vimrc-local
+  " set clipboard=unnamedplus
+  set clipboard=unnamed
 else
   set clipboard=unnamed
 end
@@ -58,7 +60,7 @@ set undofile
 set tags^=.git/tags,../tags
 
 " Set window title.
-set title
+" set title
 
 " Always show statusline.
 set laststatus=2

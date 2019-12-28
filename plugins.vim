@@ -57,7 +57,7 @@ Plug 'majutsushi/tagbar'
 Plug 'fweep/vim-tabber'
 
 " Bind cscope search commands and list results in quickfix window.
-Plug 'fweep/vim-cscope'
+" Plug 'fweep/vim-cscope'
 " unlet g:plug_url_format
 
 " Buffer list in a tray-style window.
@@ -77,10 +77,10 @@ if has('nvim')
   let g:deoplete#enable_at_startup = 1
 
   " Context-sensitive Python completion.
-  Plug 'zchee/deoplete-jedi'
+"  Plug 'zchee/deoplete-jedi'
 
   " Most Recently Used files.
-  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+"  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 else
   " Semi-asynchronous autocompletion (launches a server and communicates synchronously).
   " Plug 'Valloric/YouCompleteMe'
@@ -91,14 +91,14 @@ else
 end
 
 " Ruby/Rails plugins
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-bundler'
-Plug 'thoughtbot/vim-rspec'
-Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-bundler'
+" Plug 'thoughtbot/vim-rspec'
+" Plug 'kana/vim-textobj-user'
+" Plug 'nelstrom/vim-textobj-rubyblock'
 
 " Python plugins
-Plug 'python-mode/python-mode'
+" Plug 'python-mode/python-mode'
 
 " Improved Python folding.
 Plug 'tmhedberg/SimpylFold'
@@ -129,15 +129,20 @@ Plug 'aquach/vim-http-client'
 Plug 'fatih/vim-nginx'
 
 " Sublime-like multiple cursors.
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 
 " Syntax highlighting for tmux.conf (not updated to 2.3+).
-Plug 'tmux-plugins/vim-tmux'
+" Plug 'tmux-plugins/vim-tmux'
 
 " TypeScript syntax highlighting.
-Plug 'leafgarland/typescript-vim'
+" Plug 'leafgarland/typescript-vim'
 
 " Sublime-style code search.
-Plug 'dyng/ctrlsf.vim'
+" Plug 'dyng/ctrlsf.vim'
+
+" Go.
+Plug 'fatih/vim-go'
+
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
