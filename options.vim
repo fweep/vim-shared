@@ -95,8 +95,8 @@ set noerrorbells
 " Disable visual flash on error bells.
 set visualbell t_vb=
 
-" Reduce the number of hit-enter prompts from status messages.
-set shortmess=aTIF
+" Reduce the number of hit-enter prompts from status messages and completion notices from deoplete.
+set shortmess=aTIFc
 
 " Flash to matching paren/bracket/brace when matching pair is typed.
 set showmatch
