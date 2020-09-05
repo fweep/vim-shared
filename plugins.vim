@@ -149,6 +149,6 @@ Plug 'hashivim/vim-terraform'
 Plug 'editorconfig/editorconfig-vim'
 
 " Java
-Plug 'vim-jp/vim-java'
+" Plug 'vim-jp/vim-java'
 
 call plug#end()
