@@ -202,3 +202,7 @@ set noshowmode
 
 " Change default commentstring since I normally use hash-comment languages.
 set commentstring=#\ %s
+
+" Disable shada for mounted directories that may not be present (causes :q to take forever).
+set shada+=r/store
+set shada+=r/home/jim/Nextcloud
