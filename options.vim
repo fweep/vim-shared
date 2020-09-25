@@ -206,3 +206,10 @@ set commentstring=#\ %s
 " Disable shada for mounted directories that may not be present (causes :q to take forever).
 set shada+=r/store
 set shada+=r/home/jim/Nextcloud
+
+" CoC options
+
+" Supposedly this makes CoC faster
+set updatetime=300
+
+

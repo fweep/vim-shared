@@ -3,4 +3,4 @@
 " inoremap <silent> <expr> <CR> pumvisible() ? deoplete#mappings#close_popup()."\<CR>" : "\<CR>"
 
 " Disable completion previews.
-setlocal completeopt-=preview
+" setlocal completeopt-=preview

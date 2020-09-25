@@ -73,8 +73,46 @@ let g:airline_powerline_fonts = 1
 
 if has('nvim')
   " Asynchronous autocompletion.
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  let g:deoplete#enable_at_startup = 1
+  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " let g:deoplete#enable_at_startup = 1
+
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+  inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+  " inoremap <silent><expr> <TAB>
+  "     \ pumvisible() ? coc#_select_confirm() :
+  "     \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+  "     \ <SID>check_back_space() ? "\<TAB>" :
+  "     \ coc#refresh()
+
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+  function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~# '\s'
+  endfunction
+
+  inoremap <silent><expr> <c-space> coc#refresh()
+  imap <C-l> <Plug>(coc-snippets-expand)
+  vmap <C-j> <Plug>(coc-snippets-select)
+  imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+  nmap <silent> [g <Plug>(coc-diagnostic-prev)
+  nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+  nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+  function! s:show_documentation()
+    if (index(['vim','help'], &filetype) >= 0)
+      execute 'h '.expand('<cword>')
+    else
+      call CocActionAsync('doHover')
+    endif
+  endfunction
 
   " Context-sensitive Python completion.
 "  Plug 'zchee/deoplete-jedi'
